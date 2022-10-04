@@ -1,0 +1,19 @@
+[package]
+name = "termini"
+version = "0.1.1"
+edition = "2021"
+exclude = ["fuzz", "tests"]
+
+authors = ["pascalkuthe <pascalkuthe@semimod.de>"]
+license = "MIT"
+
+description = "Minimal terminfo libary."
+repository  = "https://github.com/pascalkuthe/termini"
+keywords    = ["terminal", "terminfo", "termcap", "term"]
+categories  = ["command-line-interface"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dirs-next = "2.0.0"
