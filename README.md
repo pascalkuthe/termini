@@ -1,5 +1,5 @@
 # termini - minimal terminfo
-![crates.io](https://img.shields.io/crates/v/termini?style=flat-square)
+[![crates.io](https://img.shields.io/crates/v/termini?style=flat-square)](https://crates.io/crates/termini)
 ![crates.io](https://img.shields.io/crates/l/termini?style=flat-square)
 
 `termini` is a Rust library that provides access to the `terminfo` database.

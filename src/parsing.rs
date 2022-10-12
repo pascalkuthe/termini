@@ -180,10 +180,7 @@ fn try_parse_ext_capabilities(
         }
         let res = get_str_with_offset(&*data.str_table, off, names_off)?.to_owned();
         match String::from_utf8(res) {
-            Ok(res) => {
-                println!("{res}");
-                Some(Ok(res))
-            }
+            Ok(res) => Some(Ok(res)),
             Err(err) => Some(Err(err.into())),
         }
     });
