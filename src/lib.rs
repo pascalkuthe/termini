@@ -281,17 +281,20 @@ impl TermInfo {
             }
 
             // Check standard location.
-            let mut path = path.clone();
-            path.push(first.to_string());
-            path.push(name);
+            {
+                let mut path = path.clone();
+                path.push(first.to_string());
+                path.push(name);
 
-            if fs::metadata(&path).is_ok() {
-                return Self::from_path(&path);
+                if fs::metadata(&path).is_ok() {
+                    return Self::from_path(&path);
+                }
             }
 
             // Check non-standard location.
             let mut path = path.clone();
             path.push(format!("{:x}", first as usize));
+            println!("{}", path.display());
             path.push(name);
 
             if fs::metadata(&path).is_ok() {
