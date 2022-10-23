@@ -294,7 +294,6 @@ impl TermInfo {
             // Check non-standard location.
             let mut path = path.clone();
             path.push(format!("{:x}", first as usize));
-            println!("{}", path.display());
             path.push(name);
 
             if fs::metadata(&path).is_ok() {
