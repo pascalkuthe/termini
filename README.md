@@ -24,7 +24,7 @@ Furthermore, `termini` is tested with a large array of compiled `terminifo` data
 
 During the implementation of this crate, the following code was used as reference:
 
-* ![terminfo](https://github.com/meh/rust-terminfo)
-* ![term](https://github.com/Stebalien/term)
-* ![cxterminfo](https://github.com/BxNiom/cx-terminfo)
-* ![pyterminfo](https://github.com/DirectXMan12/py-terminfo)
+* [terminfo](https://github.com/meh/rust-terminfo)
+* [term](https://github.com/Stebalien/term)
+* [cxterminfo](https://github.com/BxNiom/cx-terminfo)
+* [pyterminfo](https://github.com/DirectXMan12/py-terminfo)
