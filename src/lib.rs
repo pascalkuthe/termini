@@ -1,6 +1,5 @@
 #![forbid(unsafe_code)]
 
-use dirs_next::home_dir;
 use std::collections::HashMap;
 use std::fs::{self, File};
 use std::path::{Path, PathBuf};
@@ -251,7 +250,7 @@ impl TermInfo {
 
         if let Some(dir) = env::var_os("TERMINFO") {
             search.push(dir.into());
-        } else if let Some(mut home) = home_dir() {
+        } else if let Some(mut home) = home::home_dir() {
             home.push(".terminfo");
             search.push(home);
         }

@@ -16,4 +16,4 @@ categories  = ["command-line-interface"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dirs-next = "2.0.0"
+home = "0.5.4"
