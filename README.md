@@ -13,7 +13,7 @@ Some highlights of `termini` include:
 
 `termini`s main differentiating characteristic is that it's focused on providing a very minimal
 functionality.
-`termini` only has a single dependency (`dirs-next` to query the home directory) and has less than 1k LOC.
+`termini` only has a single dependency (`home` to query the home directory) and has less than 1k LOC.
 This means that it's easy to maintain/audit, doesn't introduce additional dependencies/compiletime and has
 a smaller surface area for bugs.
 
