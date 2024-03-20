@@ -15,7 +15,7 @@ mod parsing;
 mod tests;
 
 /// Terminfo database information
-#[derive(Debug, Default)]
+#[derive(Clone, Debug, Default)]
 pub struct TermInfo {
     pub name: String,
     pub description: String,
@@ -88,7 +88,7 @@ impl std::convert::From<FromUtf8Error> for Error {
     }
 }
 
-#[derive(Debug, Default)]
+#[derive(Clone, Debug, Default)]
 struct Extended {
     capabilities: HashMap<String, ValueStorage>,
     table: Box<[u8]>,
@@ -101,7 +101,7 @@ enum ValueStorage {
     Number(i32),
 }
 
-#[derive(Debug, Default)]
+#[derive(Clone, Debug, Default)]
 struct TermInfoData {
     bools: Box<[bool]>,
     numbers: Box<[i32]>,
